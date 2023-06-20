@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EatUp</string>
+    <string name="deskripsi_logo_up">Logo UP</string>
+    <string name="hot_news">Hot News</string>
+    <string name="deskripsi_garis_merah">Garis Merah</string>
+    <string name="tambah">+</string>
+</resources>
