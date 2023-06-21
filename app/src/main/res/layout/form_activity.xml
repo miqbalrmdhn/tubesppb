@@ -7,26 +7,117 @@
 
 
     <RelativeLayout
+        android:id="@+id/relatiflayout"
         android:layout_width="338dp"
         android:layout_height="524dp"
-        android:layout_marginStart="36dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202">
 
         <TextView
             android:id="@+id/judulform"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
+            android:layout_width="202dp"
+            android:layout_height="43dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="97dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="96dp"
-            android:text="Judul nih cos"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="68dp"
+            android:gravity="center"
+            android:text="Pendaftaran Berita"
+            android:textSize="18dp"
+            android:textStyle="bold"
             tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judulform"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="29dp"
+            android:text="Masukan Judul Berita" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isiJudulBerita"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="14dp"
+            android:text="Masukan Judul Berita" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isiJudulBerita2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="14dp"
+            android:text="Masukan Judul Berita" />
+
+        <EditText
+            android:id="@+id/isiJudulBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+
+            android:ems="10"
+            android:hint="Masukan Judul Berita"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/isiJudulBerita2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+
+            android:ems="10"
+            android:hint="Masukan Judul Berita"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/isiJudulBerita10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Masukan Judul Berita"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="460dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="16dp"
+            android:text="Button" />
 
     </RelativeLayout>
 
