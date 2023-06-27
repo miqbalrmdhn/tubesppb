@@ -7,27 +7,98 @@
 
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="338dp"
         android:layout_height="524dp"
-        android:layout_marginStart="36dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241">
 
         <TextView
-            android:id="@+id/judulform"
-            android:layout_width="145dp"
+            android:id="@+id/textBerita"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="23dp"
+            android:text="Masukkan Judul Berita" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextJudulBerita"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="13dp"
+            android:text="Masukkan Deskripsi Berita" />
+
+        <TextView
+            android:id="@+id/textTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextDeskripsi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="13dp"
+            android:text="Masukkan Tanggal Berita" />
+
+        <EditText
+            android:id="@+id/editTextJudulBerita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textBerita"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Rofi Nabhan"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Lorem Ipsum dolor "
+            android:inputType="textMultiLine"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="298dp"
+            android:layout_height="304dp"
+            android:layout_below="@+id/textTanggal"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="97dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="96dp"
-            android:text="Judul nih cos"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp" />
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="226dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
